@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+  color:rgb(214, 214, 214);
+    background: #0f3b50;
+}
+
+
+main
+{
+
+  background: #4f9ce9; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-60deg, #123456,#155391,#0f60b1,#1065b9,#1273d4,#0878e9,#007dfa,#6bb1f7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-60deg, #123456,#155391,#0f60b1,#1065b9,#1273d4,#0878e9,#007dfa,#6bb1f7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-60deg, #123456,#155391,#0f60b1,#1065b9,#1273d4,#0878e9,#007dfa,#6bb1f7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-60deg, #123456,#155391,#0f60b1,#1065b9,#1273d4,#0878e9,#007dfa,#6bb1f7); /* Standard syntax */
+  min-height: 1000px;
+}
+
+header,main,footer,aside,section,article
+{
+    display: block;
+    position: relative;
+}
+
+/*hero image to be blurred*/
+#heronav
+{
+    height: 300px;
+    background: #3f68b4 url("../images/irene.jpg");
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter:blur(6px);
+    -ms-filter: blur(6px);
+  
+}
+
+
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #034079;
+    z-index: 10;
+   
+   
+   
+}
+
+li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+ li::after
+{
+    content: '';
+    display: block;
+    width:0px;
+    height: 3px;
+    background-color: red;
+}
+
+ li:hover::after
+{
+    width: 100%;
+    transition: 1s;
+}
+
+
+/*hero quote*/
+#bgtext
+{
+    font-weight: bold;
+    min-width: 100%;
+    position: absolute;
+    top:35% !important;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    font-size: 3.5em;
+    font-style: italic;
+    color: rgb(32, 27, 27);
+}
+
+
+
+.rightq
+{
+ margin-left: 30px;
+}
+
+.photo
+{
+    position: relative;
+}
+
+#mypic img
+{
+    transform: rotate(90deg);
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin:auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 7px 6px 23px rgb(110, 110, 110);
+       
+}
+
+.right,.left
+{
+  
+    border-color: black;
+    background-color: black;
+    width:10%;
+    position: absolute;
+    top:5%;
+    
+  
+}
+
+.left
+{
+  left:5%;
+}
+
+.right
+{
+   right: 5%;
+}
+
+@media screen and (min-width:580px) 
+{
+    .right,.left
+    {
+        width:30%;
+    
+    }
+}
+
+blockquote
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 1.5em;
+    text-shadow: 7px 6px 23px rgb(85, 58, 58);
+    text-align: center;
+}
+
+#desc
+{
+    border: 2px solid #fff;
+    margin: 20px;
+   border-radius: 50px 0 50px 0px;
+ 
+
+}
+
+#desctitle
+{
+    background: #123456;
+    width:100%;
+    border-radius: 50px 0 6px 0px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode','Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+}
+
+#short
+{
+ padding: 20px;
+ font-size: 1.3em;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.break
+{
+    height: 3px;
+   
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red , yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+.workpic
+{
+   
+  background: rgb(65, 145, 236); /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(rgb(96, 96, 170),rgb(38, 38, 201),blue); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgb(96, 96, 170),rgb(38, 38, 201),blue); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgb(96, 96, 170),rgb(38, 38, 201),blue); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgb(96, 96, 170),rgb(38, 38, 201),blue); /* Standard syntax */
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 10px 10px 23px rgb(85, 58, 58);
+  position: relative;
+
+}
+
+.soon
+{
+    
+ margin: auto;
+
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+ footer
+{
+   background: #0f3b50;
+   color: aliceblue; 
+   padding: 10px;
+   text-align: center;
+  
+  
+}
